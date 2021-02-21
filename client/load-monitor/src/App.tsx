@@ -9,10 +9,10 @@ const App = () => {
   return (
     <div className="App">
       <LoadContextPovider>
-        <header className="App-header">
+        <div className="appContainer">
           <CurrentLoad />
           <GraphComponent />
-        </header>
+        </div>
       </LoadContextPovider>
       <ToastContainer pauseOnFocusLoss={false} />
     </div>

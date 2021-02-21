@@ -9,7 +9,7 @@ const GraphComponent = () => {
   const [duration, setDuration] = useState(2);
 
   return (
-    <div className="graphComponent">
+    <div className="graph-component">
       <FiveMinuteGraph treshold={treshold} />
       <GraphSettings
         treshold={treshold}

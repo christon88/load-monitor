@@ -1,7 +1,7 @@
 import { useContext, useEffect } from "react";
+import { toast, ToastOptions } from "react-toastify";
 import { LoadContext } from "context/loadContext";
 import { Load } from "models/load";
-import { toast, ToastOptions } from "react-toastify";
 
 type LoadState = "high" | "recovered" | "recovering" | "normal";
 

@@ -17,40 +17,40 @@ export const GraphSettings = ({
   const { period, setPeriod } = useContext(LoadContext);
   return (
     <div>
-      <div className="inputContainer">
+      <div className="input-container">
         <label htmlFor="treshold">Treshold</label>
         <input
           type="number"
           name="treshold"
-          className="graphInput"
+          className="graph-input"
           value={treshold}
-          step="0.1"
+          step={0.1}
           onChange={(event) =>
             setTreshold(parseFloat(event.currentTarget.value))
           }
         />
       </div>
-      <div className="inputContainer">
+      <div className="input-container">
         <label htmlFor="duration">Event duration</label>
         <input
           type="number"
           name="duration"
-          className="graphInput"
+          className="graph-input"
           value={duration}
-          step="0.5"
+          step={0.5}
           onChange={(event) =>
             setDuration(parseFloat(event.currentTarget.value))
           }
         />
       </div>
-      <div className="inputContainer">
+      <div className="input-container">
         <label htmlFor="duration">Graph period</label>
         <input
           type="number"
           name="period"
-          className="graphInput"
+          className="graph-input"
           value={period}
-          step="1"
+          step={1}
           onChange={(event) => setPeriod(parseFloat(event.currentTarget.value))}
         />
       </div>

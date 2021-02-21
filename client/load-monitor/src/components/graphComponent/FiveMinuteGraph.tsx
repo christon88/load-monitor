@@ -1,4 +1,4 @@
-import * as Highcharts from "highcharts";
+import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import { useContext } from "react";
 import { LoadContext } from "context/loadContext";
@@ -12,7 +12,7 @@ const FiveMinuteGraph = ({ treshold }: Props) => {
 
   const fiveMinuteValues = loads.map((load) => [
     load.timestamp,
-    load.normalized[1],
+    +load?.normalized[1]?.toFixed(2),
   ]);
 
   const options: Highcharts.Options = {

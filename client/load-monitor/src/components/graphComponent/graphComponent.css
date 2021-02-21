@@ -1,10 +1,10 @@
-.graphComponent {
+.graph-component {
   display: flex;
   flex-direction: row;
   min-height: 400px;
 }
 
-.inputContainer {
+.input-container {
   font-size: small;
   background-color: white;
   border-radius: 8px;
@@ -17,7 +17,7 @@
   font-weight: 600;
 }
 
-.graphInput {
+.graph-input {
   width: 40px;
   margin-left: 20px;
   border: #444444;
