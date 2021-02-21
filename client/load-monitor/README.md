@@ -28,6 +28,13 @@ More parameters can easily be made available for graph settings, ~~like data per
 
 The current-load component should honestly be a part of the graph instead of a separate component, either as a visible-by-default tooltip, or as a part of the title.
 I should also format the mouseover tooltip a bit nicer for the user.
+There should definitely be more detailed information about the settings. They are not intuitive at all. This could be done as a mouseover tooltip.
+The application would generally benefit from more consistent styling.
+
+There is also something happening when returning to the window, where all the toasts are gathered on screen.
+This may be desired behaviour to show previous instances of high load, but its not on purpose.
+They could all be saved in a notification box in the header instead.
+The notifications could also have a timestamp. Right now the time is only visible in the graph.
 
 A separate graph can be added for all CPU-cores to display percentage of non-idle time.
 
